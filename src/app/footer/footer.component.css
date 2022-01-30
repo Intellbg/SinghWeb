@@ -1,0 +1,55 @@
+footer{
+    padding-top: 1.4em;
+    background-color: #031963;
+    color: white;
+}
+a{
+    color: white;
+}
+
+h3{
+    font-size: 26px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+.h3-small{
+  font-variant: small-caps;
+}
+.p-title{
+    font-size: 18px;
+    font-style:  italic;
+    font-weight: bold;
+  }
+  
+  .yellow{
+    color: #F8B51A;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
+p{  
+    font-style:  italic;
+}
+
+.margin{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.copyright{
+  background-color: #c4c4c4; 
+  width: 100%; 
+  padding: 0.5em;
+  color: black;
+}
+
+fa-icon{
+  font-size: 25px;
+  padding: 0.5em;
+}
+fa-icon:hover{
+  color: #F8B51A;
+}

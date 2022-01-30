@@ -1,0 +1,23 @@
+<img class="cover-img" src="assets/img/c4.jpg" alt="">
+<div class="container">
+    <h1 class="sectionTitle">Travel</h1>
+    <h2>India is the seventh-largest country by area in the World, it is a country that has a strong culture and
+        traditions that have been preserved over the years.
+        <br>
+        If you are interested in visiting India for business, tourism, or medical treatment we can help you find the
+        best options to make your visit a pleasant one.
+    </h2>
+    <div class="row justify-content-center" *ngFor="let service of services">
+        <div class="col-sm-12 col-md-8">
+            <mat-card-header>
+                <mat-card-title>{{service.name}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div [outerHTML]=service.description></div>
+            </mat-card-content>
+        </div>
+        <div class="col-sm-12 col-md-2">
+            <img src={{service.img}} style="width: 100%;">
+        </div>
+    </div>
+</div>

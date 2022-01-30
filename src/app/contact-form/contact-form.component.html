@@ -1,0 +1,31 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="legacy">
+        <mat-label>Name</mat-label>
+        <input matInput required formControlName="name">
+    </mat-form-field>
+   
+    <mat-form-field appearance="legacy">
+        <mat-label>Lastname</mat-label>
+        <input matInput required formControlName="lastName">
+    </mat-form-field>
+    
+    <mat-form-field appearance="legacy">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="usuario@example.com" formControlName="email" required>
+        <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+    </mat-form-field>
+    
+    <mat-form-field appearance="legacy">
+        <mat-label>Phone</mat-label>
+        <input matInput formControlName="phone" required>
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>Message</mat-label>
+        <textarea matInput required formControlName="message"></textarea>
+    </mat-form-field>
+    
+    <div mat-dialog-actions align="center">
+        <button type="submit" [disabled]="!contactForm.valid" mat-raised-button>Enviar</button>
+    </div>
+</form>

@@ -1,0 +1,16 @@
+.center{
+    text-align: center;
+}
+mat-card-header{
+    color: "primary";
+}
+.container{
+    margin-top: 3em;
+}
+mat-card{
+    margin-bottom: 2em;
+}
+img{
+    max-height: 250px;
+    
+}

@@ -1,0 +1,63 @@
+.container{
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+.formDiv{
+    padding: 2em;
+}
+.title{
+    color: #b07c02;
+}
+
+.material-icons{
+    font-size: 25px;
+}
+.info{
+    margin: 1em 0;
+}
+
+h4{
+    font-size: 20px;
+}
+.holder{
+    margin-top: 3em;
+    margin-bottom: 4em;
+    padding: 1em;
+    background-color: #fafafa;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.8)
+}
+.blueIcon{
+    color: white;
+    background-color: #031963;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2em;
+    margin: 0.5em;
+}
+.logoC{
+    width: 100%;
+}
+
+@media screen and (max-width: 280px) {
+    .blueIcon{
+        height: 1.5em;
+        width: 1.5em;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5em;
+        margin: 0.5em;
+        margin: 0.25em;
+    }
+    h4{
+        font-size: 16px;
+    }
+}
+.logoText{
+    color: #031963;
+    text-align: center;
+}

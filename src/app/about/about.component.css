@@ -1,0 +1,49 @@
+p{
+    font-size: 20px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+.section{
+    width: 100%; 
+    border-bottom: 1px solid #F8B51A; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    padding-top: 0.5em;
+}
+
+.section span { 
+    background:#fafafa; 
+    padding:0 10px; 
+    font-size: 30px;
+    color: #F8B51A;
+}
+.container{
+    margin-top: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #fafafa;
+}
+.logo{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    padding: 2em;
+    max-width: 600px;
+    width: auto;
+}
+.containerIntern{
+    width: 80%;
+    margin: auto;
+}
+@media screen and (max-width: 800px) {
+    .logo{
+        width: 90%;
+        max-height: auto;
+    }
+
+  }
+.cover{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
