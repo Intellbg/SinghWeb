@@ -13,4 +13,17 @@ export class InvestComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  displayStyle = "none";
+  openPopup(a: any) {
+    const product=products.find(element => element.name == a)
+    if (product){
+      product.modal="block"
+    }
+  }
+  closePopup(a: any) {
+    const product=products.find(element => element.name == a)
+    if (product){
+      product.modal="none"
+    }
+  }
 }

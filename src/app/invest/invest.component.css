@@ -11,8 +11,17 @@ mat-card{
     margin-bottom: 2em;
 }
 img{
-    max-height: 175px;
+    height: 175px;
     object-fit: cover;
 }
 
+.modalimg{
+    position: relative;
+    display: block; 
+    margin: auto; 
+    width:100%
+}
 
+.link{
+    color: #031963;
+}

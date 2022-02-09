@@ -3,17 +3,40 @@
 <div class="container">
     <h1 class="sectionTitle">Products</h1>
     <h2>
-        If you are interested in buying products from India or you are in the area of export and international logistics and want to sell abroad our Company guide to make it comes true. 
+        If you are interested in buying products from India or you are in the area of export and international logistics
+        and want to sell abroad our Company guide to make it comes true.
         <br>The areas where you can buy products are:
     </h2>
     <div class="row justify-content-center">
         <div class="col-sm-2 col-md-6 col-lg-3" *ngFor="let service of products">
-            <mat-card >
+            <mat-card (click)="openPopup(service.name)">
                 <img mat-card-image src={{service.img}} alt="Photo of a Shiba Inu">
-                <mat-card-header >
-                    <mat-card-title >{{service.name}}</mat-card-title>
+                <mat-card-header>
+                    <mat-card-title style="white-space: pre">{{service.name}}</mat-card-title>
                 </mat-card-header>
             </mat-card>
+
+            <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':service.modal}">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title">{{service.name}}</h1>
+                        </div>
+                        <div class="modal-body">
+                            <div [outerHTML]="service.modalCont"></div>
+                            <img style="display: block; margin: auto;" src={{imagen}} alt="" *ngFor="let imagen of service.modalImgs">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" (click)="closePopup(service.name)">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+

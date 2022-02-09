@@ -1,6 +1,6 @@
 export const servicest=[
     {
-        "name":"BUSSINESS",
+        "name":"BUSINESS",
         "description":"<p>Throughout the year India make many Fair across the country, offering a wide variety of products like Fashion, Solar Industry, construction, Electronic Industry, etc.</p>",
         "img":"assets/img/t1.jpg"
     },
@@ -10,7 +10,7 @@ export const servicest=[
         "img":"assets/img/t2.jpg"
     },
     {
-        "name":"ADYURVEDA",
+        "name":"AYURVEDA",
         "img":"assets/img/t3.jpg"
     },
     {
